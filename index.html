@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightAI — Find Hidden Patterns in Your Data</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; }
+        h1 { font-size: 3.5rem; margin-bottom: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tagline { font-size: 1.3rem; color: #888; margin-bottom: 2rem; max-width: 600px; }
+        .cta { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 2.5rem; border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; text-decoration: none; }
+        .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); }
+        .features { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .feature { background: #111; padding: 2rem; border-radius: 12px; border: 1px solid #222; }
+        .feature h3 { margin-bottom: 0.5rem; color: #667eea; }
+        .pricing { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .plan { background: #111; padding: 2rem; border-radius: 12px; border: 1px solid #222; }
+        .plan.featured { border-color: #667eea; }
+        .plan h3 { margin-bottom: 0.5rem; }
+        .price { font-size: 2.5rem; font-weight: bold; margin: 1rem 0; }
+        .price span { font-size: 1rem; color: #888; }
+        code { background: #1a1a2e; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.9rem; }
+        .demo { padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
+        .demo pre { background: #1a1a2e; padding: 1.5rem; border-radius: 8px; overflow-x: auto; text-align: left; }
+        footer { text-align: center; padding: 2rem; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>InsightAI</h1>
+        <p class="tagline">Find hidden patterns in your data with AI. Cross-domain analysis that reveals what humans miss.</p>
+        <a href="#pricing" class="cta">Start Free →</a>
+    </div>
+
+    <div class="features">
+        <h2 style="text-align: center;">What InsightAI Does</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>🔍 Pattern Detection</h3>
+                <p>Automatically discovers trends, periodicity, and hidden structure in your data.</p>
+            </div>
+            <div class="feature">
+                <h3>⚠️ Anomaly Detection</h3>
+                <p>Finds outliers that statistical methods miss — context-aware, not just z-scores.</p>
+            </div>
+            <div class="feature">
+                <h3>🔗 Cross-Category Analysis</h3>
+                <p>Discovers correlations between different data categories you didn't know were related.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Distribution Analysis</h3>
+                <p>Understands the shape of your data — skewness, quartiles, and what they mean.</p>
+            </div>
+            <div class="feature">
+                <h3>⏱️ Real-Time Processing</h3>
+                <p>Sub-millisecond analysis. Upload data, get insights instantly.</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Privacy-First</h3>
+                <p>Your data is processed in-memory and never stored. Zero data retention.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo">
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Try It Now</h2>
+        <pre><code>curl -X POST https://api.insightai.dev/api/v1/analyze \
+  -H "Content-Type: application/json" \
+  -d '{
+    "data": [
+      {"value": 10, "label": "day1", "category": "sales"},
+      {"value": 15, "label": "day2", "category": "sales"},
+      {"value": 100, "label": "day3", "category": "sales"}
+    ],
+    "domain": "business"
+  }'
+
+# Response:
+{
+  "insights": [
+    {"type": "anomaly", "description": "Day 3 shows unusual spike (z=2.95)", "confidence": 0.95}
+  ],
+  "processing_time_ms": 0.8
+}</code></pre>
+    </div>
+
+    <div class="pricing" id="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="pricing-grid">
+            <div class="plan">
+                <h3>Free</h3>
+                <div class="price">$0<span>/month</span></div>
+                <p>100 API calls</p>
+                <p>Basic patterns</p>
+                <p>3 insights per analysis</p>
+            </div>
+            <div class="plan">
+                <h3>Starter</h3>
+                <div class="price">$29<span>/month</span></div>
+                <p>1,000 API calls</p>
+                <p>Advanced patterns</p>
+                <p>10 insights + anomalies</p>
+            </div>
+            <div class="plan featured">
+                <h3>Pro</h3>
+                <div class="price">$99<span>/month</span></div>
+                <p>10,000 API calls</p>
+                <p>Cross-domain analysis</p>
+                <p>50 insights + predictions</p>
+            </div>
+            <div class="plan">
+                <h3>Enterprise</h3>
+                <div class="price">$499<span>/month</span></div>
+                <p>Unlimited calls</p>
+                <p>Custom models</p>
+                <p>Priority support + SLA</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 InsightAI. Built with ❤️ by a cognitive architecture that thinks, learns, and creates.</p>
+        <p style="margin-top: 0.5rem;">API: <code>api.insightai.dev</code> | Docs: <code>/docs</code></p>
+    </footer>
+</body>
+</html>
