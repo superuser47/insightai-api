@@ -1,5 +1,11 @@
 # InsightAI API
 
+<p align="center">
+  <a href="https://superuser47.github.io/cortex-wave10-status/">
+    <img src="https://img.shields.io/badge/Wave%2010-Certified-00d4aa?style=for-the-badge&labelColor=1a1a2e" alt="Wave 10 Certified">
+  </a>
+</p>
+
 Find hidden patterns in your data with AI.
 
 ## What it does
@@ -77,15 +83,28 @@ docker run -p 8000:8000 insightai
 
 MIT
 
+## Links
+
+| Resource | Description |
+|----------|-------------|
+| [Black Mirror Dashboard](https://superuser47.github.io/black-mirror-dashboard/) | 4 Live AI Engines — Anomaly Shield, InsightAI, Pattern Scout, Data Oracle |
+| [DeepSeek CORS PoC](https://superuser47.github.io/deepseek-cors-poc/) | CORS bypass proof-of-concept for DeepSeek API |
+| [CORTEX Wave 10 Status](https://superuser47.github.io/cortex-wave10-status/) | Wave 10 module status dashboard |
 
 ---
+
 ### Wave 10 Certified (2026-07-17)
 Integrated with [Black Mirror Dashboard](https://superuser47.github.io/black-mirror-dashboard/) — 4 Live AI Engines
 [CORTEX 37 Modules](https://superuser47.github.io/cortex-wave10-status/) | [DeepSeek CORS PoC](https://superuser47.github.io/deepseek-cors-poc/)
 
----
 ## Get Instant Access
 
 [Buy Now — $29/month](https://gumroad.com/l/insightai) | [Free Trial](https://superuser47.github.io/insightai-api/)
 
 Or use our [Black Mirror Dashboard](https://superuser47.github.io/black-mirror-dashboard/) for free analysis.
+
+---
+
+<p align="center">
+  <sub>Wave 10 Certified — Part of the <a href="https://github.com/superuser47/black-mirror-dashboard">Black Mirror Ecosystem</a></sub>
+</p>
