@@ -76,3 +76,9 @@ docker run -p 8000:8000 insightai
 ## License
 
 MIT
+
+
+---
+### Wave 10 Certified (2026-07-17)
+Integrated with [Black Mirror Dashboard](https://superuser47.github.io/black-mirror-dashboard/) — 4 Live AI Engines
+[CORTEX 37 Modules](https://superuser47.github.io/cortex-wave10-status/) | [DeepSeek CORS PoC](https://superuser47.github.io/deepseek-cors-poc/)
